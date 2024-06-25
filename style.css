@@ -1,3 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:white;
+    --secondary-color:rgb(99, 165, 241);
+    --heading1:32px;
+    --background1:rgb(228, 229, 231);
+    --background2:rgb(213, 225, 248);
+    --general-padding-section: 16px 64px;
+}
+
 body{
-    background-color: gainsboro;
+    background-color: var(--background2);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--general-padding-section);
+
+}
+
+header .logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+ul li{
+    list-style: none;
+}
+
+header ul{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.helloArea{
+    background-image: url("./assets/images/AboutHodalImage.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+
+}
+
+h1{
+font-size: xx-large;
+}
+h2{
+    font-size:32px;
+}
+
+.helloArea div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background-color: rgba(60, 77, 124,0.5);
+    height: 100vh;
+    width: 100vw;
+}
+#Hello{
+    font-size: 72px;
+}
+.AboutMe{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.aboutImageContainer img{
+    width: 400px;
+}
+.servicesSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.special{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
